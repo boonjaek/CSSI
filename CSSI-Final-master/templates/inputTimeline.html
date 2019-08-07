@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Timeline Input</title>
+    <link rel="stylesheet" type="text/css" href="../static/autoSpanhome.css">
+
+  </head>
+  <body>
+    <br>
+    <nav>
+      <ul>
+        <li><a href="/"> Home</a></li>
+        <li><a href="/input-timeline"> Timeline</a></li>
+        <li><a href="/enter-info"> Car Info</a></li>
+        <li><a href={{signout_link_html}}> Sign Out</a></li>
+      </ul>
+    </nav>
+    <br>
+
+    <div class = container>
+      <img id = "currentImage" src="https://i.imgur.com/zj7RRbC.png">
+    </div>
+    <div class=box1>
+      <h2> Please enter: </h2>
+    <form method="post" action="/display">
+      Car Age calculated from the Car Info page:<br>
+      <input id = "carage" type="float" name = "carage"><br><br>
+      Year your car was manufactured:<br>
+      <input id ="Year" type="integer" name = "Year"><br><br>
+      Make ("Brand") of your car:<br>
+      <input id ="Make" type="string" name = "Make"><br><br>
+      Model of your car:<br>
+      <input id ="Model" type="string" name = "Model"><br><br>
+      <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>

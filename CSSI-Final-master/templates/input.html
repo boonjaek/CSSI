@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../static/autoSpanhome.css">
+    <script src="../static/js/index.js"></script>
+    <title>Input Car Data</title>
+  </head>
+  <body>
+    </script>
+
+      <br>
+      <nav>
+        <ul>
+          <li><a href="/"> Home</a></li>
+          <li><a href="/input-timeline"> Timeline</a></li>
+          <li><a href="/enter-info"> Car Info</a></li>
+          <li><a href={{signout_link_html}}> Sign Out</a></li>
+        </ul>
+      </nav>
+      <br>
+
+    <div class = container>
+      <img id = "currentImage" src="https://i.imgur.com/zj7RRbC.png">
+    </div>
+      <div class=box1 id="inputCar">
+        <h1 id=whatVroom> Calculate Your CarSpan</h1>
+        <form method="post" action="/show-info">
+        The year your car was manufactured here:<br>
+        <input id ="Year" type="integer" name = "Year"><br>
+        The make of your car here:<br>
+        <input id ="Make" type="text" name = "Make"><br>
+        The model of your car here:<br>
+        <input id ="Model" type="text" name = "Model"><br>
+        The milage of your car here:<br>
+        <input id = "Mileage" type="float" name = "Mileage"><br>
+
+          <label for="carType">The class of your car here:<br></label>
+          <select id="carType" onchange="setPicture();" name="carType">
+            <option value="https://i.imgur.com/zj7RRbC.png">Select a Car</option>
+            <option value="../static/images/carImages/micro.jpg">Micro</option>
+            <option value="../static/images/carImages/sedan.jpg">Sedan</option>
+            <option value="../static/images/carImages/cuv.jpg">CUV</option>
+            <option value="../static/images/carImages/suv.jpg">SUV</option>
+            <option value="../static/images/carImages/hatchback.jpg">Hatchback</option>
+            <option value="../static/images/carImages/roadster.jpg">Roadster</option>
+            <option value="../static/images/carImages/pickup.jpg">Pickup</option>
+            <option value="../static/images/carImages/van.jpg">Van</option>
+            <option value="../static/images/carImages/coupe.jpg">Coupe</option>
+            <option value="../static/images/carImages/supercar.jpg">Supercar</option>
+            <option value="../static/images/carImages/cabriolet.jpg">Cabriolet</option>
+            <option value="../static/images/carImages/minivan.jpg">Minivan</option>
+          </select>
+          <input type="submit" value="Go!">
+          </input>
+        </form>
+      </div>
+      <!-- </p> -->
+    </div>
+   </body>
+</html>
